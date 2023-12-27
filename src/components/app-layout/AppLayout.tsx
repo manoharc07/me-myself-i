@@ -6,10 +6,7 @@ import "./AppLayout.css"
 const AppLayout = () => {
     return <div className="appLayout">
         <Navbar />
-        <div className="greetings">
-            <Greetings />
-        </div>
-
+        <Greetings />
         <div className="footer">
             <Footer />
         </div>

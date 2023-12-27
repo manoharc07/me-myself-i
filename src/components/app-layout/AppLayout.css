@@ -12,15 +12,6 @@
     background: linear-gradient(to top, #6f0000, #200122);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-    .greetings {
-        width: 100%;
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-    }
-
     .footer {
         width: 100%;
         margin-top: auto;
