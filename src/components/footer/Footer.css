@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .contactMe,
+    .connect,
+    .copyright {
+        font-size: small;
+
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: .5rem;
+        }
+
+        .headerIcon {
+            margin-left: .5rem;
+            height: 18px;
+            width: 18px;
+        }
+
+        .subHeaderIcon {
+            margin-left: .5rem;
+            height: 16px;
+            width: 16px;
+        }
+
+    }
+}
