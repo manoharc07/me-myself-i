@@ -1,0 +1,67 @@
+.skill-icon {
+    width: 4em;
+    height: 4em;
+    margin: 0 2em;
+}
+
+.skill-icon:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-icon.react:hover {
+    filter: drop-shadow(0 0 1.5em #8de0f7);
+}
+
+.skill-icon.graphql:hover {
+    filter: drop-shadow(0 0 1.5em rgb(231, 48, 255));
+}
+
+.skill-icon.sass:hover {
+    filter: drop-shadow(0 0 1.5em rgb(219, 140, 230));
+}
+
+.skill-icon.python:hover {
+    filter: drop-shadow(0 0 1.5em rgb(61, 111, 248));
+}
+
+.skill-icon.flask:hover {
+    filter: drop-shadow(0 0 1.5em rgb(255, 255, 255));
+}
+
+.skill-icon.java:hover {
+    filter: drop-shadow(0 0 1.5em rgb(214, 91, 34));
+}
+
+.skill-icon.nginx:hover {
+    filter: drop-shadow(0 0 1.5em rgb(106, 214, 34));
+}
+
+.skill-icon.nodejs:hover {
+    filter: drop-shadow(0 0 1.5em rgb(255, 255, 255));
+}
+
+.skill-icon.redis:hover {
+    filter: drop-shadow(0 0 1.5em rgb(199, 49, 49));
+}
+
+.skill-icon.redux:hover {
+    filter: drop-shadow(0 0 1.5em rgb(162, 64, 222));
+}
+
+.skill-icon.spring:hover {
+    filter: drop-shadow(0 0 1.5em rgb(0, 186, 78));
+}
+
+.skill-icon.sql:hover {
+    filter: drop-shadow(0 0 1.5em rgb(177, 156, 255));
+}
+
+.skill-icon.twilio:hover {
+    filter: drop-shadow(0 0 1.5em rgb(255, 46, 46));
+}
+
+.skill-icon.webpack:hover {
+    filter: drop-shadow(0 0 1.5em rgb(142, 214, 251));
+}
