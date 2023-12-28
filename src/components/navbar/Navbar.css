@@ -4,6 +4,8 @@
     width: 100%;
     justify-content: space-around;
 
+    background-color: rgba(0, 0, 0, 0.07);
+
     .navTitle {
         padding: 1rem;
         font-weight: bold;
