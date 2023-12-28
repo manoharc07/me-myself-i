@@ -15,10 +15,29 @@ import WebpackIcon from "../../assets/skills/webpack.svg"
 import "./SkillIcon.css"
 import { Popup } from "semantic-ui-react"
 
-type iconType = "react" | "sass" | "graphql" | "webpack" | "redux" | "nodejs" | "nginx" | "twilio" | "redis" | "spring" | "java" | "python" | "flask" | "sql"
+const skills = {
+    react: "Coming Soon! 😉",
+    sass: "Coming Soon! 😉",
+    graphql: "Coming Soon! 😉",
+    webpack: "Coming Soon! 😉",
+    redux: "Coming Soon! 😉",
+    nodejs: "Coming Soon! 😉",
+    nginx: "Coming Soon! 😉",
+    twilio: "Coming Soon! 😉",
+    redis: "Coming Soon! 😉",
+    spring: "Coming Soon! 😉",
+    java: "Coming Soon! 😉",
+    python: "Coming Soon! 😉",
+    flask: "Coming Soon! 😉",
+    sql: "Coming Soon! 😉"
+}
+
 const SkillIcon = ({ iconType }: {
-    iconType: iconType
+    iconType: keyof typeof skills
 }) => {
+    const getIconText = () => {
+        return skills[iconType]
+    }
     const getIcon = () => {
         switch (iconType) {
             case "react":
@@ -57,11 +76,10 @@ const SkillIcon = ({ iconType }: {
     return <>
         <Popup
             trigger={<img className={`skill-icon ${iconType}`} src={getIcon()} alt="" />}
-            content="Content coming soon! 😎"
+            content={getIconText()}
             on={["hover", "click"]}
             hideOnScroll
-            className="skillPopup"
-            inverted
+            className="skill-popup"
         />
 
     </>

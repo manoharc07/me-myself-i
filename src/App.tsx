@@ -1,4 +1,4 @@
-import "./App.css"
+import "./App.module.css"
 import AppLayout from "./components/app-layout/AppLayout"
 import "semantic-ui-css/semantic.min.css"
 

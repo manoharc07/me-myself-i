@@ -1,10 +1,12 @@
 .navbar {
+    z-index: 1;
+    position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
 
-    background-color: rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(3px);
 
     .navTitle {
         padding: 1rem;

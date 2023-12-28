@@ -10,13 +10,13 @@ const AnimatedText = ({ targetText }: { targetText: string }) => {
                     return char !== targetText[index] ? randomChar() : char
                 }).join("")
             })
-        }, 10)
+        }, 5)
 
         return () => clearInterval(intervalId)
     }, [targetText])
 
     function randomChar() {
-        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?\\/>?. "
+        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?{[]}+=-)(*&^%$#@!\\/>?.   "
         return characters.charAt(Math.floor(Math.random() * characters.length))
     }
 
