@@ -5,4 +5,45 @@
     align-items: center;
     justify-content: center;
     font-size: x-large;
+    flex-wrap: nowrap;
+
+    .skills-container {
+        .skills-row {
+            padding: .75em 1.5em !important;
+            margin: 0;
+
+            .skill-column {
+                padding: .75em .25em !important;
+                justify-content: center;
+                display: flex !important;
+            }
+
+            .skill-column.bottom-left {
+                padding: 0 !important;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .skill-column.bottom-right {
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+
+            .skill-column.bottom {
+                padding-bottom: 0 !important;
+                align-items: flex-end;
+            }
+
+            .skill-column.top-left {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .skill-column.top-right {
+                padding: 0 !important;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+    }
 }

@@ -8,6 +8,10 @@
     .copyright {
         font-size: small;
 
+        a {
+            color: white;
+        }
+
         span {
             display: flex;
             flex-direction: row;

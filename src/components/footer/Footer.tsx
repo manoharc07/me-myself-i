@@ -8,11 +8,13 @@ import "./Footer.css"
 const Footer = () => {
     return <div className="footer">
         <div className="contactMe">
-            <span>
-                Contact Me
-                <img className="headerIcon" src={Mail} alt="" />
-            </span>
-            <span>manoharc07@gmail.com</span>
+            <a href="mailto:manoharc07@gmail.com" >
+                <span>
+                    Contact Me
+                    <img className="headerIcon" src={Mail} alt="" />
+                </span>
+                <span>manoharc07@gmail.com</span>
+            </a>
         </div>
         <div className="connect">
             <span>
@@ -20,9 +22,15 @@ const Footer = () => {
                 <img className="headerIcon" src={Connect} alt="" />
             </span>
             <span>
-                <img className="subHeaderIcon" src={Medium} alt="" />
-                <img className="subHeaderIcon" src={Linkedin} alt="" />
-                <img className="subHeaderIcon" src={Git} alt="" />
+                <a href="https://medium.com/@manoharc07" target="_blank">
+                    <img className="subHeaderIcon" src={Medium} alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/manohar-c-0b99161a7/" target="_blank">
+                    <img className="subHeaderIcon" src={Linkedin} alt="" />
+                </a>
+                <a href="https://github.com/manoharc07" target="_blank">
+                    <img className="subHeaderIcon" src={Git} alt="" />
+                </a>
             </span>
         </div>
         <div className="copyright">
