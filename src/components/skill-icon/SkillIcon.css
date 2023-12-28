@@ -26,7 +26,8 @@
     filter: drop-shadow(0 0 1.5em rgb(61, 111, 248));
 }
 
-.skill-icon.flask:hover {
+.skill-icon.flask:hover,
+.skill-icon.nodejs:hover {
     filter: drop-shadow(0 0 1.5em rgb(255, 255, 255));
 }
 
@@ -34,12 +35,9 @@
     filter: drop-shadow(0 0 1.5em rgb(214, 91, 34));
 }
 
-.skill-icon.nginx:hover {
+.skill-icon.nginx:hover,
+.skill-icon.spring:hover {
     filter: drop-shadow(0 0 1.5em rgb(106, 214, 34));
-}
-
-.skill-icon.nodejs:hover {
-    filter: drop-shadow(0 0 1.5em rgb(255, 255, 255));
 }
 
 .skill-icon.redis:hover {
@@ -48,10 +46,6 @@
 
 .skill-icon.redux:hover {
     filter: drop-shadow(0 0 1.5em rgb(162, 64, 222));
-}
-
-.skill-icon.spring:hover {
-    filter: drop-shadow(0 0 1.5em rgb(0, 186, 78));
 }
 
 .skill-icon.sql:hover {

@@ -13,10 +13,9 @@ import SqlIcon from "../../assets/skills/sql.svg"
 import TwilioIcon from "../../assets/skills/twilio.svg"
 import WebpackIcon from "../../assets/skills/webpack.svg"
 import "./SkillIcon.css"
+import { Popup } from "semantic-ui-react"
 
 type iconType = "react" | "sass" | "graphql" | "webpack" | "redux" | "nodejs" | "nginx" | "twilio" | "redis" | "spring" | "java" | "python" | "flask" | "sql"
-export const mySkills: iconType[] = ["react", "sass", "graphql", "webpack", "redux", "nodejs", "nginx", "twilio", "redis", "spring", "java", "python", "flask", "sql"]
-
 const SkillIcon = ({ iconType }: {
     iconType: iconType
 }) => {
@@ -56,8 +55,15 @@ const SkillIcon = ({ iconType }: {
     }
 
     return <>
+        <Popup
+            trigger={<img className={`skill-icon ${iconType}`} src={getIcon()} alt="" />}
+            content="Content coming soon! 😎"
+            on={["hover", "click"]}
+            hideOnScroll
+            className="skillPopup"
+            inverted
+        />
 
-        <img className={`skill-icon ${iconType}`} src={getIcon()} alt="" />
     </>
 }
 
