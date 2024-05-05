@@ -50,7 +50,7 @@ const Greetings = () => {
                     <SkillIcon iconType="twilio" />
                 </Grid.Column>
                 <Grid.Column className="skill-column">
-                    <SkillIcon iconType="java" />
+                    <SkillIcon iconType="csharp" />
                 </Grid.Column>
                 <Grid.Column className="skill-column bottom-left">
                     <SkillIcon iconType="sql" />

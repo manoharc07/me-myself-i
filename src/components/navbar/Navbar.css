@@ -19,6 +19,7 @@
         flex-direction: row;
 
         div {
+            cursor: pointer;
             margin-left: 1rem;
             font-weight: lighter;
         }

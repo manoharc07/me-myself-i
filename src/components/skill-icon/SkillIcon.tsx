@@ -12,31 +12,16 @@ import SpringIcon from "../../assets/skills/spring.svg"
 import SqlIcon from "../../assets/skills/sql.svg"
 import TwilioIcon from "../../assets/skills/twilio.svg"
 import WebpackIcon from "../../assets/skills/webpack.svg"
+import CSharp from "../../assets/skills/csharp.svg"
+import SkillContent from "./SkillContent.json"
 import "./SkillIcon.css"
 import { Popup } from "semantic-ui-react"
 
-const skills = {
-    react: "Coming Soon! 😉",
-    sass: "Coming Soon! 😉",
-    graphql: "Coming Soon! 😉",
-    webpack: "Coming Soon! 😉",
-    redux: "Coming Soon! 😉",
-    nodejs: "Coming Soon! 😉",
-    nginx: "Coming Soon! 😉",
-    twilio: "Coming Soon! 😉",
-    redis: "Coming Soon! 😉",
-    spring: "Coming Soon! 😉",
-    java: "Coming Soon! 😉",
-    python: "Coming Soon! 😉",
-    flask: "Coming Soon! 😉",
-    sql: "Coming Soon! 😉"
-}
-
 const SkillIcon = ({ iconType }: {
-    iconType: keyof typeof skills
+    iconType: keyof typeof SkillContent
 }) => {
     const getIconText = () => {
-        return skills[iconType]
+        return SkillContent[iconType]
     }
     const getIcon = () => {
         switch (iconType) {
@@ -68,6 +53,8 @@ const SkillIcon = ({ iconType }: {
                 return TwilioIcon
             case "webpack":
                 return WebpackIcon
+            case "csharp":
+            return CSharp
             default:
                 return ""
         }
