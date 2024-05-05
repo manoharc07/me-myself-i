@@ -10,7 +10,7 @@ const AnimatedText = ({ targetText }: { targetText: string }) => {
                     return char !== targetText[index] ? randomChar() : char
                 }).join("")
             })
-        }, 5)
+        }, 10)
 
         return () => clearInterval(intervalId)
     }, [targetText])
